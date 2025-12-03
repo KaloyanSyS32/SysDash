@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <OutputType>WinExe</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+
+    <!-- Metadata -->
+    <AssemblyTitle>SysDash</AssemblyTitle>
+    <AssemblyDescription>System Monitor Utility</AssemblyDescription>
+    <Company>CodeTweakrs</Company>
+    <Product>SysDash</Product>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Authors>Kaloyan Krastev</Authors>
+    <Copyright>© 2025 CodeTweakrs</Copyright>
+    <PackageProjectUrl>https://codetweakrs.net</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="icon.ico" />
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="9.0.10" />
+    <PackageReference Include="System.Management" Version="9.0.10" />
+  </ItemGroup>
+
+</Project>
